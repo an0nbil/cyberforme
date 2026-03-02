@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import ProgressBar from './components/ProgressBar';
 import QuestionCard from './components/QuestionCard';
 import ResultsView from './components/ResultsView';
@@ -217,6 +218,7 @@ export default function App() {
           </footer>
         ) : null}
       </div>
+      <SpeedInsights />
     </div>
   );
 }
